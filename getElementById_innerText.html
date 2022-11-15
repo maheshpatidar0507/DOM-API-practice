@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="h1"><h1>hello everyone I am Mahesh Patidar</h1></div>
+      <div id="fruits">
+        <div id="fruitEle">Banana</div>
+        <div id="fruitEle">Apple</div>
+        <div id="fruitEle">Orange</div>
+        <div id="fruitEle">Mango</div>
+        <input type="text" placeholder="Enetr here" />
+      </div>
+      <div id="h2"><h1>hello everyone say some thing please</h1></div>
+    </div>
+    <script>
+      // const containerElem = document.getElementById("fruitEle").innerText;
+
+      const containerElem = (document.getElementById("fruitEle").innerText =
+        "How are you?");
+
+      console.log(containerElem);
+    </script>
+  </body>
+</html>
