@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create element</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 5px;
+      height: 243px;
+      width: 235 px;
+      background-color: blue;
+      padding-bottom: 25px;
+    }
+    #login_window {
+      display: flex;
+      padding: 15px;
+      flex-direction: column;
+      /* justify-content: center; */
+      /* align-items: center; */
+      width: 236px;
+      height: 190px;
+      background-color: #fff;
+    }
+    .login {
+      margin-left: 90px;
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .e_mail {
+      padding: 0;
+      margin: 0;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .e_mail_input {
+      width: 224px;
+      height: 22px;
+      border-radius: 5px;
+      border: solidgray 1px;
+      margin-bottom: 15px;
+    }
+    .pass_word {
+      padding: 0;
+      margin: 0;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .pass_input {
+      width: 224px;
+      height: 22px;
+    }
+    .btn {
+      margin-top: 15px;
+      width: 240px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: aquamarine;
+      border: none;
+      font-size: 25;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .not_Acc {
+      margin-top: 5px;
+      margin-bottom: 0;
+      font-size: 15px;
+      height: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+
+  <body>
+    <div id="box">
+      <div id="login_window"></div>
+    </div>
+    <script>
+      const login = document.createElement("log");
+      login.className = "login";
+      login.innerHTML = "Login";
+      //append
+      document.getElementById("login_window").append(login);
+      //000000000000000000000000000000000000000000000000      email   0000000000000000000000000000000
+      const email = document.createElement("p");
+      email.className = "e_mail";
+      email.innerText = "Email";
+      //append
+      document.getElementById("login_window").append(email);
+      //000000000000000000000000000000000000000000000000     email input   0000000000000000000000000000000
+      const emailInput = document.createElement("input");
+      emailInput.className = "e_mail_input";
+      //   email.innerText = "Email";
+      //append
+      document.getElementById("login_window").append(emailInput);
+      //000000000000000000000000000000000000000000000000      Password   0000000000000000000000000000000
+      const password = document.createElement("p");
+      password.className = "pass_word";
+      password.innerText = "Password";
+      //append
+      document.getElementById("login_window").append(password);
+      //000000000000000000000000000000000000000000000000     password input   0000000000000000000000000000000
+      const passInput = document.createElement("input");
+      passInput.className = "pass_input";
+      //   passInput.innerText = "password";
+      //append
+      document.getElementById("login_window").append(passInput);
+
+      //0000000000000000000000000000000000000000000000000000submit button0000000000000000000000000
+      const btn = document.createElement("button");
+      btn.className = "btn";
+      btn.innerText = "Submit";
+      //append
+      document.getElementById("login_window").append(btn);
+      //000000000000000000000000000000000000000000000000    Not have an account   0000000000000000000000000000000
+      const notAcc = document.createElement("p");
+      notAcc.className = "not_Acc";
+      notAcc.innerText = "Not have an account?";
+      //append
+      document.getElementById("box").append(notAcc);
+      //000000000000000000000000000000000000000000000000   sign up here   0000000000000000000000000000000
+    </script>
+  </body>
+</html>
